@@ -1,0 +1,35 @@
+﻿without prefectch
+28.06.21 20:53:55.455 Executing sql 'select N0.[Oid],N0.[LastName],N0.[FirstName],N0.[FullName],N0.[OptimisticLockField],N0.[GCRecord] from [Person] N0 where N0.[GCRecord] is null'
+28.06.21 20:53:55.456 Result: rowcount = 2, total = 170, N0.{Oid,Guid} = 32, N0.{LastName,String} = 34, N0.{FirstName,String} = 28, N0.{FullName,String} = 60, N0.{OptimisticLockField,Int32} = 8, N0.{GCRecord,Int32} = 8
+Jose Manuel
+28.06.21 20:53:55.457 Executing sql 'parameters [@p0] guid;select N0.[OID],N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link],N0.[IPerson_PhoneNumbers_Link],N0.[OptimisticLockField],N0.[GCRecord] from [IPerson_PhoneNumbers] N0 where (N0.[GCRecord] is null and (N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link] = [@p0]))' with parameters {c6c58299-456e-4dc8-9a70-4c0be29b8285}
+28.06.21 20:53:55.458 Result: rowcount = 3, total = 132, N0.{OID,Int32} = 12, N0.{IPhone_Implicit_IPerson_PhoneNumbers_List_Link,Guid} = 48, N0.{IPerson_PhoneNumbers_Link,Guid} = 48, N0.{OptimisticLockField,Int32} = 12, N0.{GCRecord,Int32} = 12
+28.06.21 20:53:55.459 Executing sql 'parameters [@p0] guid,[@p1] guid,[@p2] guid;select N0.[Oid],N0.[Number],N0.[OptimisticLockField],N0.[GCRecord] from [Phone] N0 where N0.[Oid] in ([@p0],[@p1],[@p2])' with parameters {5296b90b-26a6-4eb4-93f4-a13015902b48},{7ed5c668-3797-4785-86a9-9afbe72bbd78},{b3cdd13c-3a2a-43ca-b305-2191b89018d8}
+28.06.21 20:53:55.461 Result: rowcount = 3, total = 114, N0.{Oid,Guid} = 48, N0.{Number,String} = 42, N0.{OptimisticLockField,Int32} = 12, N0.{GCRecord,Int32} = 12
+1234
+7980
+3456345
+Javier Columbie
+28.06.21 20:53:55.463 Executing sql 'parameters [@p0] guid;select N0.[OID],N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link],N0.[IPerson_PhoneNumbers_Link],N0.[OptimisticLockField],N0.[GCRecord] from [IPerson_PhoneNumbers] N0 where (N0.[GCRecord] is null and (N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link] = [@p0]))' with parameters {ee2c5137-b309-42a1-99f2-d7f4fa5da80d}
+28.06.21 20:53:55.464 Result: rowcount = 2, total = 88, N0.{OID,Int32} = 8, N0.{IPhone_Implicit_IPerson_PhoneNumbers_List_Link,Guid} = 32, N0.{IPerson_PhoneNumbers_Link,Guid} = 32, N0.{OptimisticLockField,Int32} = 8, N0.{GCRecord,Int32} = 8
+28.06.21 20:53:55.465 Executing sql 'parameters [@p0] guid,[@p1] guid;select N0.[Oid],N0.[Number],N0.[OptimisticLockField],N0.[GCRecord] from [Phone] N0 where N0.[Oid] in ([@p0],[@p1])' with parameters {55726c12-ef73-4f79-979b-d8797246462b},{c8a29323-b8a6-4d2c-8868-4f25560fd59c}
+28.06.21 20:53:55.466 Result: rowcount = 2, total = 70, N0.{Oid,Guid} = 32, N0.{Number,String} = 22, N0.{OptimisticLockField,Int32} = 8, N0.{GCRecord,Int32} = 8
+asd
+erty
+28.06.21 20:53:55.468	Action 'wp' done
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Prefectch
+28.06.21 20:53:12.327 Executing sql 'select N0.[Oid],N0.[LastName],N0.[FirstName],N0.[FullName],N0.[OptimisticLockField],N0.[GCRecord] from [Person] N0 where N0.[GCRecord] is null'
+28.06.21 20:53:12.331 Result: rowcount = 2, total = 170, N0.{Oid,Guid} = 32, N0.{LastName,String} = 34, N0.{FirstName,String} = 28, N0.{FullName,String} = 60, N0.{OptimisticLockField,Int32} = 8, N0.{GCRecord,Int32} = 8
+28.06.21 20:53:12.338 Executing sql 'parameters [@p0] guid,[@p1] guid;select N0.[OID],N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link],N0.[IPerson_PhoneNumbers_Link],N0.[OptimisticLockField],N0.[GCRecord] from [IPerson_PhoneNumbers] N0 where (N0.[GCRecord] is null and N0.[IPhone_Implicit_IPerson_PhoneNumbers_List_Link] in ([@p0],[@p1]))' with parameters {c6c58299-456e-4dc8-9a70-4c0be29b8285},{ee2c5137-b309-42a1-99f2-d7f4fa5da80d}
+28.06.21 20:53:12.341 Result: rowcount = 5, total = 220, N0.{OID,Int32} = 20, N0.{IPhone_Implicit_IPerson_PhoneNumbers_List_Link,Guid} = 80, N0.{IPerson_PhoneNumbers_Link,Guid} = 80, N0.{OptimisticLockField,Int32} = 20, N0.{GCRecord,Int32} = 20
+28.06.21 20:53:12.343 Executing sql 'parameters [@p0] guid,[@p1] guid,[@p2] guid,[@p3] guid,[@p4] guid;select N0.[Oid],N0.[Number],N0.[OptimisticLockField],N0.[GCRecord] from [Phone] N0 where N0.[Oid] in ([@p0],[@p1],[@p2],[@p3],[@p4])' with parameters {5296b90b-26a6-4eb4-93f4-a13015902b48},{55726c12-ef73-4f79-979b-d8797246462b},{7ed5c668-3797-4785-86a9-9afbe72bbd78},{b3cdd13c-3a2a-43ca-b305-2191b89018d8},{c8a29323-b8a6-4d2c-8868-4f25560fd59c}
+28.06.21 20:53:12.345 Result: rowcount = 5, total = 184, N0.{Oid,Guid} = 80, N0.{Number,String} = 64, N0.{OptimisticLockField,Int32} = 20, N0.{GCRecord,Int32} = 20
+Jose Manuel
+1234
+7980
+3456345
+Javier Columbie
+asd
+erty
+28.06.21 20:53:12.357	Action 'p' done
